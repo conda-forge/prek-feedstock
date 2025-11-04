@@ -44,7 +44,7 @@ about:
     - THIRDPARTY.yml
     - licenses/LICENSE.pre-commit.txt
     - licenses/LICENSE.identify.txt
-    - lib/pty/LICENSE
+    - crates/prek-pty/LICENSE
 
 extra:
   recipe-maintainers:
