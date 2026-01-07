@@ -202,6 +202,3 @@ Feedstock Maintainers
 * [@ocefpaf](https://github.com/ocefpaf/)
 * [@weiji14](https://github.com/weiji14/)
 
-
-<!-- dummy commit to enable rerendering -->
-
