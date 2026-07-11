@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: prek
-  version: "0.4.8"
+  version: "0.4.9"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://github.com/j178/${{ name }}/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: b3affb81a468dee2394acda7d20f9b08a49452c74600b9dc279e36b770517a3e
+  sha256: c98edc2d545755b43a04097ad5f2eb69af30a7fea694d8163aa7a0128a166852
 
 build:
   number: 0
