@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://github.com/j178/${{ name }}/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: f6d0952e31ffd6e508660749dd51b8d8de96e955ed12c40e411f3224f502fed2
+  sha256: 6f0d3615690382d4a1339a81a2ada2330ac5141481eb79459ed8d63026efb9a0
 
 build:
   number: 0
