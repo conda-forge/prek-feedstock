@@ -13,7 +13,7 @@ source:
   sha256: 6f0d3615690382d4a1339a81a2ada2330ac5141481eb79459ed8d63026efb9a0
 
 build:
-  number: 0
+  number: 1
   script:
     env:
       CARGO_PROFILE_RELEASE_STRIP: symbols
@@ -25,7 +25,9 @@ build:
       CC_aarch64_pc_windows_msvc: clang-cl
       AR_aarch64_pc_windows_msvc: llvm-lib
     content:
-      - cargo auditable install --locked --no-track --bins --root ${{ PREFIX }} --path crates/prek
+      - if: win and arm64
+        then: cargo auditable install --locked --no-track --bins --root ${{ PREFIX }} --path crates/prek --target aarch64-pc-windows-msvc
+        else: cargo auditable install --locked --no-track --bins --root ${{ PREFIX }} --path crates/prek
       - cargo-bundle-licenses --format yaml --output ./THIRDPARTY.yml
 
 requirements:
