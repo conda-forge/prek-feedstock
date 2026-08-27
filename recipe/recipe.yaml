@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: prek
-  version: "0.4.14"
+  version: "0.5.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://github.com/j178/${{ name }}/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: 6f0d3615690382d4a1339a81a2ada2330ac5141481eb79459ed8d63026efb9a0
+  sha256: 3a19e696c7b06942947b8fd737c01a3ff0718a92460e59075828d43f80b6a814
 
 build:
-  number: 1
+  number: 0
   script:
     env:
       CARGO_PROFILE_RELEASE_STRIP: symbols
