@@ -25,6 +25,7 @@ build:
       CC_aarch64_pc_windows_msvc: clang-cl
       AR_aarch64_pc_windows_msvc: llvm-lib
     content:
+      - cargo update -p aws-lc-rs --precise 1.18.2 # remove when prek's Cargo.lock uses aws-lc-rs>=1.18.2
       - if: target_platform == "linux-ppc64le"
         then: export CARGO_BUILD_RUSTFLAGS="${CARGO_BUILD_RUSTFLAGS:-} -C link-arg=-fuse-ld=bfd"
       - if: win and arm64
