@@ -57,7 +57,8 @@ about:
     - THIRDPARTY.yml
     - licenses/LICENSE.pre-commit.txt
     - licenses/LICENSE.identify.txt
-    - crates/prek-pty/LICENSE
+    - crates/prek-ignore/LICENSE-MIT
+    - crates/prek-update/LICENSE.axoupdater
 
 extra:
   recipe-maintainers:
